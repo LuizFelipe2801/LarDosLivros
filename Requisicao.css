@@ -1,0 +1,112 @@
+/* Para o layout da página */
+body {
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Colocar os filhos em coluna */
+    min-height: 100vh; /* Garante que a altura mínima do body seja a altura da tela */
+}
+
+main {
+    flex: 1; /* Faz o main ocupar o espaço restante */
+}
+
+/* Estilo do cabeçalho */
+.header-custom {
+    background-color: #ca8a00; /* Cor de fundo do cabeçalho */
+}
+
+/* Estilo da barra de navegação */
+.nav-custom {
+    background-color: #f8d200; /* Cor de fundo da barra de navegação */
+}
+
+/* Estilo da imagem dentro da carta */
+.card img {
+    height: 500px; /* Altura da imagem */
+    object-fit: contain; /* Mantém a proporção da imagem */
+    margin-top: 20px;
+}
+
+/* Margem das cartas de livro */
+.card {
+    margin: 20px; /* Margem em torno das cartas */
+    border-radius: 10px;
+}
+
+/* Estilo da Sidebar */
+.sidebar {
+    background-color: #ffffff; /* Cor de fundo branca */
+    border-right: 1px solid #dee2e6; /* Borda direita cinza */
+}
+
+/* Estilo do botão de pesquisa */
+.button-pesquisar-custom {
+    background-color: #0a9e2d; /* Cor de fundo do botão de pesquisa */
+}
+
+/* Estilo do botão de pesquisa ao passar o mouse*/
+.button-pesquisar-custom:hover {
+    background-color: #07be32; /* Cor de fundo do botão de pesquisa */
+}
+
+/* Estilo do botão de aviso */
+.btn-warning {
+    background-color: #ffd34d; /* Cor de fundo do botão */
+    border-color: #000000; /* Cor da borda do botão */
+}
+
+/* Efeito hover do botão de aviso */
+.btn-warning:hover {
+    background-color: rgb(255, 230, 0); /* Cor do botão ao passar o mouse */
+}
+
+/* Estilo da mensagem de alerta */
+.alert {
+    margin: 15px; /* Margem em torno da alerta */
+    position: relative; /* Posição relativa para controle de layout */
+    z-index: 1000; /* Para sobreposição acima de outros elementos */
+}
+
+/* Estilo da mensagem de alerta de sucesso */
+.alert-success {
+    background-color: #d4edda; /* Cor de fundo verde claro */
+    color: #155724; /* Cor do texto */
+    border: 1px solid #c3e6cb; /* Borda verde */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilo do botão de confirmar no modal */
+.button-confirmar-custon {
+    background-color: #0a9e2d; /* Cor de fundo do botão de Confirmar */
+    border: 1px solid black;
+}
+
+.button-confirmar-custon:hover {
+    background-color: #07be32; /* Cor de fundo do botão de Confirmar ao passar o mouse */
+} 
+
+/* Estilo do botão de cancelar no modal */
+.button-cancelar-custom {
+    background-color: #ff0b0b; /* Cor de fundo do botão de cancelar */
+    border: 1px solid #000000; /* Borda preta */
+}
+
+.button-cancelar-custom:hover {
+    background-color: #bd0101; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilo da mensagem de alerta de cancelamento */
+.alert-cancelado {
+    background-color: #edd4d4; /* Cor de fundo verde claro */
+    color: #ff0b0b; /* Cor do texto */
+    border: 1px solid #edd4d4; /* Borda verde */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}

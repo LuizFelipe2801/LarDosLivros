@@ -1,0 +1,110 @@
+/* Estilo geral do body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo do cabeçalho */
+.header-custom {
+    background-color: #ca8a00;
+    padding: 20px 0;
+}
+
+/* Estilo da barra de navegação */
+.nav-custom {
+    background-color: #f8d200;
+}
+
+/* Estilo das cartas de livro */
+.card {
+    margin: 20px;
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Imagem do livro */
+.card img {
+    height: 300px; /* Altura da imagem */
+    object-fit: cover; /* Mantém a proporção da imagem */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-text{
+    margin: 10px;
+}
+
+.card-subtitle{
+    margin: 10px;
+}
+
+/* Estilo do botão de pesquisa */
+.button-pesquisar-custom {
+    background-color: #0a9e2d;
+}
+
+.button-pesquisar-custom:hover {
+    background-color: #07be32;
+}
+
+/* Estilo do botão de cancelar reserva */
+.btn-warning {
+    background-color: #ffd34d;
+}
+
+.btn-warning:hover {
+    background-color: rgb(255, 230, 0);
+}
+
+/* Estilo do modal */
+.modal-content {
+    border-radius: 10px; /* Borda arredondada do modal */
+}
+
+/* Estilo dos botões no modal */
+.button-confirmar-custon {
+    background-color: #0a9e2d;
+    border: none;
+}
+
+.button-confirmar-custon:hover {
+    background-color: #07be32;
+}
+
+.button-cancelar-custom {
+    background-color: #ff0b0b;
+    border: none;
+}
+
+.button-cancelar-custom:hover {
+    background-color: #bd0101;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Estilo de mensagens de alerta */
+.alert {
+    margin: 15px;
+    position: relative;
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-cancelado {
+    background-color: #edd4d4;
+    color: #ff0b0b;
+}
+
