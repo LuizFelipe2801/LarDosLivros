@@ -16,7 +16,7 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="image/image.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-        LarDosLivros
+        LARDOSLIVROS
       </a>
       <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
         <form class="d-flex flex-grow-1" role="search">
@@ -33,7 +33,7 @@
     <p>Solicite seus livros favoritos!</p>
   </header>
 
-  <div class="container-fluid">
+  <div class="container-fluid barra-lateral">
     <div class="row">
       <!-- Sidebar de Navegação -->
       <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
@@ -49,76 +49,126 @@
       <main class="col-md-9 ml-sm-auto col-lg-10 px-2">
         <div class="row justify-content-center" id="livros-container">
           <!-- Detalhes do Livro -->
-          <div class="col-md-8 mb-3">
-            <div class="card">
-              <img src="image/Cientista_Computacao.jpg" class="card-img-top" alt="Cientista da Computação">
-              <div class="card-body">
-                <h5 class="card-title">Cientista da Computação Autodidata: Guia de Estruturas de Dados e Algoritmos Para
-                  o Iniciante</h5>
-                <p class="card-text">
-                  <strong>Autor: Cory Althoff</strong><br><br>
-                  Prepare-se para uma nova e empolgante carreira no desenvolvimento de software. Cientista da Computação
-                  Autodidata dá sequência ao livro Programador Autodidata, que inspirou centenas de milhares de
-                  profissionais a aprender a programar fora da escola.
-                  <span id="ler-mais" style="display:none;">
-                    Em Programador Autodidata, Cory mostrou aos leitores por que não precisamos de um diploma em Ciência
-                    da Computação para programar profissionalmente e ensinou os fundamentos da programação que usou para
-                    passar de iniciante a engenheiro de software no eBay sem diploma.
-                    Em Cientista da Computação Autodidata, Cory ensina os tópicos mais importantes da Ciência da
-                    Computação que todos os programadores autodidatas precisam conhecer para ter carreiras maravilhosas.
-                    O livro dá ênfase a estruturas de dados e algoritmos: dois assuntos que qualquer aspirante a
-                    programador tem de entender.
-                    Cientista da Computação Autodidata não o tornará apenas um programador melhor, mas também o ajudará
-                    a passar na entrevista técnica: processo pelo qual todos os programadores têm de passar para ter um
-                    novo emprego.
-                    Independentemente de se você está se preparando para conseguir um emprego ou se deseja aumentar seu
-                    conhecimento em estruturas de dados e algoritmos, Cientista da Computação Autodidata impulsionará
-                    sua carreira em programação. Foi escrito realmente para iniciantes. Logo, você não terá problemas ao
-                    lê-lo mesmo se não tiver estudado Ciência da Computação.
-                  </span>
-                  <a href="#" id="toggleLerMais">Ler mais</a>
-                </p>
-                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#confirmModal"
-                  onclick="setBookTitle('Cientista da Computação')">Solicitar Empréstimo</button>
+          <div class="card d-flex flex-row">
+            <img src="image/Cientista_Computacao.jpg" class="card-img-left" alt="Cientista da Computação">
+            <div class="card-body">
+              <h5 class="card-title">Cientista da Computação Autodidata: Guia de Estruturas de Dados e Algoritmos Para o
+                Iniciante</h5>
+              <p class="card-text">
+                Edição Português | por Cory Althoff (Autor)
+              <div class="star">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                </svg>
               </div>
+              </p>
+              <p>
+                Prepare-se para uma nova e empolgante carreira no desenvolvimento de software. Cientista da Computação
+                Autodidata dá sequência ao livro Programador Autodidata, que inspirou centenas de milhares de
+                profissionais a aprender a programar fora da escola.
+                <span id="ler-mais" style="display:none;">
+                  Em Programador Autodidata, Cory mostrou aos leitores por que não precisamos de um diploma em Ciência
+                  da Computação para programar profissionalmente e ensinou os fundamentos da programação que usou para
+                  passar de iniciante a engenheiro de software no eBay sem diploma.
+                  Em Cientista da Computação Autodidata, Cory ensina os tópicos mais importantes da Ciência da
+                  Computação que todos os programadores autodidatas precisam conhecer para ter carreiras maravilhosas.
+                  O livro dá ênfase a estruturas de dados e algoritmos: dois assuntos que qualquer aspirante a
+                  programador tem de entender.
+                  Cientista da Computação Autodidata não o tornará apenas um programador melhor, mas também o ajudará
+                  a passar na entrevista técnica: processo pelo qual todos os programadores têm de passar para ter um
+                  novo emprego.
+                  Independentemente de se você está se preparando para conseguir um emprego ou se deseja aumentar seu
+                  conhecimento em estruturas de dados e algoritmos, Cientista da Computação Autodidata impulsionará
+                  sua carreira em programação. Foi escrito realmente para iniciantes. Logo, você não terá problemas ao
+                  lê-lo mesmo se não tiver estudado Ciência da Computação.
+                </span>
+                <a href="#" id="toggleLerMais">Ler mais</a>
+              </p>
+              <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#confirmModal"
+                onclick="setBookTitle('Cientista da Computação')">Solicitar Empréstimo</button>
             </div>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <h5 class="text-custom">Da editora</h5>
+        <div class="editor-container">
+          <img src="image/Editora_Cientista.jpg" class="ImagemEditora" alt="editora">
+          <div class="text-content">
+            <h6 class="text-title">Sobre a Novatec</h6>
+            <p class="text-about">Há mais de 25 anos no mercado, a Novatec Editora é uma editora brasileira especializada em
+              publicações de livros técnicos nas áreas de informática, robótica, negócios e investimentos destinados a
+              profissionais, estudantes e professores do ramo, sendo referência nestas áreas.</p>
           </div>
         </div>
       </main>
     </div>
+  </div>
 
-    <!-- Modal de Confirmação -->
-    <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="confirmModalLabel">Confirmação de Empréstimo</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            Você tem certeza que deseja solicitar o empréstimo de "<span id="livro-titulo"></span>"?
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn button-cancelar-custom rounded" id="cancelar-emprestimo"
-              data-bs-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn button-confirmar-custon rounded"
-              id="confirmar-emprestimo">Confirmar</button>
-          </div>
+  <!-- Modal de Confirmação -->
+  <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="confirmModalLabel">Confirmação de Empréstimo</h5>
+        </div>
+        <div class="modal-body">
+          Você tem certeza que deseja solicitar o empréstimo de "<span id="livro-titulo"></span>"?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn button-cancelar-custom rounded" id="cancelar-emprestimo"
+            data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn button-confirmar-custon rounded" id="confirmar-emprestimo">Confirmar</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Scripts do Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="Requisicao.js"></script>
+  <!-- Toast Container -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="image/image.png" class="Logo" alt="Logo" width="30" height="24">
+        <strong class="me-auto">LARDOSLIVROS</strong>        
+      </div>
+      <div class="toast-body">
+        Hello, world! Esta é uma mensagem de toast.
+      </div>
+    </div>
+  </div>
 
-    <!-- Rodapé da Página -->
-    <footer class="bg-dark text-white text-center py-3">
-      <p>&copy; 2024 LarDosLivros. Todos os direitos reservados.</p>
-    </footer>
+  <!-- Scripts do Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="npm i bootstrap-icons"></script>
+  <script src="Requisicao.js"></script>
 
+  <!-- Rodapé da Página -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 LarDosLivros. Todos os direitos reservados.</p>
+  </footer>
 
 </body>
 

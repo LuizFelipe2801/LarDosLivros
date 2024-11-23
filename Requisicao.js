@@ -1,20 +1,37 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Inicializar o Modal
   const modal = new bootstrap.Modal(document.getElementById("confirmModal"));
   const livroTituloElement = document.getElementById("livro-titulo");
-  const mensagemContainer = document.createElement("div");
-  document.body.prepend(mensagemContainer);
+
+  // Inicializar o Toast
+  const liveToast = document.getElementById("liveToast");
+  const toastBody = liveToast.querySelector(".toast-body");
+
+  // Função para mostrar o Toast
+  const mostrarToast = (mensagem, tipo) => {
+    toastBody.innerText = mensagem;
+    liveToast.classList.remove("bg-success", "bg-danger");
+    if (tipo === "sucesso") {
+      liveToast.classList.add("bg-success");
+    } else {
+      liveToast.classList.add("bg-danger");
+    }
+
+    // Inicializar e mostrar o Toast
+    const toast = new bootstrap.Toast(liveToast,{
+      delay: 5000
+    });
+    toast.show();
+  };
 
   // Função para exibir a mensagem de confirmação
   const exibirMensagem = (titulo, tipo) => {
-    const mensagem = document.createElement("div");
-    mensagem.className =
-      tipo === "sucesso" ? "alert alert-success" : "alert alert-cancelado";
-    mensagem.innerText =
+    const mensagem =
       tipo === "sucesso"
         ? `Empréstimo de "${titulo}" foi solicitado com sucesso!`
         : `Empréstimo do livro "${titulo}" foi cancelado!`;
-    mensagemContainer.prepend(mensagem);
-    setTimeout(() => mensagem.remove(), 4000);
+
+    mostrarToast(mensagem, tipo);
   };
 
   // Função para manipular a confirmação do empréstimo

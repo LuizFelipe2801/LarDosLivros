@@ -1,7 +1,6 @@
-/* Para o layout da página */
 body {
-    display: flex; /* Usar flexbox */
-    flex-direction: column; /* Colocar os filhos em coluna */
+    display: flex; 
+    flex-direction: column;
     min-height: 100vh; /* Garante que a altura mínima do body seja a altura da tela */
 }
 
@@ -11,99 +10,135 @@ main {
 
 /* Estilo do cabeçalho */
 .header-custom {
-    background-color: #ca8a00; /* Cor de fundo do cabeçalho */
+    background-color: #ca8a00; 
 }
 
 /* Estilo da barra de navegação */
 .nav-custom {
-    background-color: #f8d200; /* Cor de fundo da barra de navegação */
+    background-color: #f8d200;
 }
 
-/* Estilo da imagem dentro da carta */
-.card img {
-    height: 500px; /* Altura da imagem */
-    object-fit: contain; /* Mantém a proporção da imagem */
-    margin-top: 20px;
+.barra-lateral{
+    display: flex;
+    min-height: 100vh;
 }
 
-/* Margem das cartas de livro */
 .card {
-    margin: 20px; /* Margem em torno das cartas */
-    border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Alinha os itens ao topo */
+  margin: 30px;
+  border-radius: 10px;
+}
+/* Estilo da estrelas */
+.star{
+    margin-top: -15px;
 }
 
 /* Estilo da Sidebar */
 .sidebar {
-    background-color: #ffffff; /* Cor de fundo branca */
-    border-right: 1px solid #dee2e6; /* Borda direita cinza */
+    background-color: #ffffff; 
+    border-right: 1px solid #dee2e6; /* Borda direita */
 }
 
-/* Estilo do botão de pesquisa */
+.text-custom {
+    margin: 20px;
+}
+
 .button-pesquisar-custom {
-    background-color: #0a9e2d; /* Cor de fundo do botão de pesquisa */
+    background-color: #0a9e2d; 
 }
 
 /* Estilo do botão de pesquisa ao passar o mouse*/
 .button-pesquisar-custom:hover {
-    background-color: #07be32; /* Cor de fundo do botão de pesquisa */
+    background-color: #07be32; 
 }
 
 /* Estilo do botão de aviso */
 .btn-warning {
-    background-color: #ffd34d; /* Cor de fundo do botão */
-    border-color: #000000; /* Cor da borda do botão */
+    background-color: #ffd34d;
+    border-color: #000000; 
 }
 
 /* Efeito hover do botão de aviso */
 .btn-warning:hover {
-    background-color: rgb(255, 230, 0); /* Cor do botão ao passar o mouse */
+    background-color: rgb(255, 230, 0); 
 }
 
 /* Estilo da mensagem de alerta */
 .alert {
-    margin: 15px; /* Margem em torno da alerta */
+    margin: 15px; 
     position: relative; /* Posição relativa para controle de layout */
     z-index: 1000; /* Para sobreposição acima de outros elementos */
 }
 
 /* Estilo da mensagem de alerta de sucesso */
 .alert-success {
-    background-color: #d4edda; /* Cor de fundo verde claro */
-    color: #155724; /* Cor do texto */
-    border: 1px solid #c3e6cb; /* Borda verde */
-    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #d4edda; 
+    color: #155724; 
+    border: 1px solid #c3e6cb; 
+    border-radius: 5px; 
 }
 
 /* Estilo do botão de confirmar no modal */
 .button-confirmar-custon {
-    background-color: #0a9e2d; /* Cor de fundo do botão de Confirmar */
+    background-color: #0a9e2d;
     border: 1px solid black;
 }
 
 .button-confirmar-custon:hover {
-    background-color: #07be32; /* Cor de fundo do botão de Confirmar ao passar o mouse */
+    background-color: #07be32;
 } 
 
 /* Estilo do botão de cancelar no modal */
 .button-cancelar-custom {
-    background-color: #ff0b0b; /* Cor de fundo do botão de cancelar */
-    border: 1px solid #000000; /* Borda preta */
+    background-color: #ff0b0b;
+    border: 1px solid #000000; 
 }
 
 .button-cancelar-custom:hover {
-    background-color: #bd0101; /* Cor do botão ao passar o mouse */
+    background-color: #bd0101; 
 }
 
 /* Estilo da mensagem de alerta de cancelamento */
 .alert-cancelado {
-    background-color: #edd4d4; /* Cor de fundo verde claro */
-    color: #ff0b0b; /* Cor do texto */
-    border: 1px solid #edd4d4; /* Borda verde */
-    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #edd4d4;
+    color: #ff0b0b; 
+    border: 1px solid #edd4d4; 
+    border-radius: 5px; 
+}
+
+.editor-container {
+    display: flex;
+    align-items: center; /* Alinha a imagem e o texto */
+    margin: 80px 0; /* Espaçamento vertical */
+}
+
+.ImagemEditora {
+    margin-right: 50px; /* Espaço entre a imagem e o texto */
+    max-width: 240px;  
+}
+
+.text-custom {
+    color: #333;
+    font-size: 1.25rem; 
+}
+
+.text-title {
+    font-size: 1rem;
+    margin: 0; 
+    color: #111; 
+    font-weight: bold; /* Negrito */
+}
+
+ .text-about {
+    margin: 15px 0 0; /* Espaçamento acima e abaixo do texto */
+    color: #555; 
 }
 
 /* Estilo do rodapé */
 footer {
+    margin-top: auto;
     background-color: #343a40;
     color: white;
     text-align: center;
